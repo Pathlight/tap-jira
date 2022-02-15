@@ -1,39 +1,16 @@
 {
   "title": "Issue",
   "type": [
-    "null",
-    "object"
+    "null", "object"
   ],
   "properties": {
-    "expand": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "self": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "uri"
-    },
-    "key": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
+    "expand": { "type": [ "null", "string" ] },
+    "id": { "type": [ "null", "string" ] },
+    "self": { "type": [ "null", "string" ], "format": "uri" },
+    "key": { "type": [ "null", "string" ] },
     "renderedFields": {
       "type": [
-        "null",
-        "object"
+        "null", "object"
       ],
       "patternProperties": {
         ".+": {}
@@ -41,21 +18,14 @@
     },
     "properties": {
       "title": "Properties",
-      "type": [
-        "null",
-        "object"
-      ],
+      "type": [ "null", "object" ],
       "properties": {
         "properties": {
-          "type": [
-            "null",
-            "object"
-          ],
+          "type": [ "null", "object" ],
           "patternProperties": {
             ".+": {
               "type": [
-                "null",
-                "string"
+                "null", "string"
               ]
             }
           }
@@ -63,24 +33,17 @@
       }
     },
     "names": {
-      "type": [
-        "null",
-        "object"
-      ],
+      "type": [ "null", "object" ],
       "patternProperties": {
         ".+": {
           "type": [
-            "null",
-            "string"
+            "null", "string"
           ]
         }
       }
     },
     "schema": {
-      "type": [
-        "null",
-        "object"
-      ],
+      "type": [ "null", "object" ],
       "patternProperties": {
         ".+": {
           "$ref": "json-type"
@@ -90,15 +53,11 @@
     "editmeta": {
       "title": "Edit Meta",
       "type": [
-        "null",
-        "object"
+        "null", "object"
       ],
       "properties": {
         "fields": {
-          "type": [
-            "null",
-            "object"
-          ],
+          "type": [ "null", "object" ],
           "patternProperties": {
             ".+": {
               "$ref": "field-meta"
@@ -108,63 +67,83 @@
       }
     },
     "versionedRepresentations": {
-      "type": [
-        "null",
-        "object"
-      ],
+      "type": [ "null", "object" ],
       "patternProperties": {
         ".+": {
-          "type": [
-            "null",
-            "object"
-          ],
-          "patternProperties": {
-            ".+": {}
-          }
+          "type": [ "null", "object" ],
+          "patternProperties": { ".+": {} }
         }
       }
     },
     "fieldsToInclude": {
       "title": "Included Fields",
-      "type": [
-        "null",
-        "object"
-      ]
+      "type": [ "null", "object" ]
     },
     "fields": {
-      "type": [
-        "null",
-        "object"
-      ],
+      "type": [ "null", "object" ],
       "properties": {
         "updated": {
           "type": [
-            "null",
-            "string"
+            "null",  "string"
           ],
           "format": "date-time"
         },
         "created": {
           "type": [
-            "null",
-            "string"
+            "null", "string"
           ],
           "format": "date-time"
         },
         "lastViewed": {
           "type": [
-            "null",
-            "string"
+            "null", "string"
           ],
           "format": "date-time"
         },
         "attachment": {
           "type": [
-            "null",
-            "array"
+            "null",  "array"
           ],
           "items": {
             "$ref": "attachment"
+          }
+        },
+        "issuetype": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "name": {"type": [ "null", "string"] }
+          }
+        },
+        "project": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "key": {"type": [ "null", "string"] }
+          }
+        },
+        "priority": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "name": {"type": [ "null", "string"] }
+          }
+        },
+        "assignee": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "displayName": {"type": [ "null", "string"] },
+            "accountId": {"type": [ "null", "string"] } 
+          }
+        },
+        "status": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "name": {"type": [ "null", "string"] }
+          }
+        },
+        "creator": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "displayName": {"type": [ "null", "string"] },
+            "accountId": {"type": [ "null", "string"] } 
           }
         }
       },
