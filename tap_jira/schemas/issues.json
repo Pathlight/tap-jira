@@ -145,7 +145,34 @@
             "displayName": {"type": [ "null", "string"] },
             "accountId": {"type": [ "null", "string"] } 
           }
-        }
+        },
+        "summary": {
+          "type": [
+            "null",  "string"
+          ]
+        },
+        "labels": {
+          "type": [ "null",  "array" ],
+            "items": {
+    			"type": "string"
+ 		 	}		
+        },
+        "components": {
+           "type": [ "null",  "array" ],
+           "items": {
+           		"type": [ "null", "object"],
+           		"properties": {
+		            "name": {"type": [ "null", "string"] }   			
+           		}
+           }
+        },
+        "customfield_10021": {
+           "$comment": "Sprints are defined as custom fields in Jira, so the custom field id could be different for different instances",
+           "type": [ "null",  "array" ],
+           "items": {
+            "$ref": "sprint"
+          }
+        }        
       },
       "patternProperties": {
         ".+": {}
@@ -307,6 +334,15 @@
           ]
         }
       }
+    },
+    "sprint": {           		
+    	"type": ["null", "object" ],
+    	"properties": {
+		 	"name": {"type": [ "null", "string"] },   			
+       		"startDate": { "type": [ "null", "string" ], "format": "date-time" },
+       		"endDate": { "type": [ "null", "string" ], "format": "date-time" },
+       		"completeDate": { "type": [ "null", "string" ], "format": "date-time" }
+        }
     },
     "attachment": {
       "properties": {
