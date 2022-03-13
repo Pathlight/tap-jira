@@ -160,6 +160,7 @@
         "components": {
            "type": [ "null",  "array" ],
            "items": {
+	            "title": "Component",
            		"type": [ "null", "object"],
            		"properties": {
 		            "name": {"type": [ "null", "string"] }   			
@@ -172,8 +173,12 @@
            "items": {
             "$ref": "sprint"
           }
-        }        
-      },
+        },    
+        "customfield_10023": {
+           "$comment": "Story Points are defined as custom fields in Jira, so the custom field id could be different for different instances",
+           "type": [ "null",  "number" ]
+        }    
+       },
       "patternProperties": {
         ".+": {}
       }
@@ -336,6 +341,7 @@
       }
     },
     "sprint": {           		
+	    "title": "Sprint",
     	"type": ["null", "object" ],
     	"properties": {
 		 	"name": {"type": [ "null", "string"] },   			
