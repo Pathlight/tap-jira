@@ -3256,6 +3256,184 @@
                   "null",
                   "array"
                 ]
+              },
+              "issuetype": {
+                "properties": {
+                  "name": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "project": {
+                "properties": {
+                  "key": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "priority": {
+                "properties": {
+                  "name": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "assignee": {
+                "properties": {
+                  "displayName": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "accountId": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "status": {
+                "properties": {
+                  "name": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "creator": {
+                "properties": {
+                  "displayName": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "accountId": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "summary": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "labels": {
+                "items": {
+                  "type": "string"
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "components": {
+                "items": {
+                  "properties": {
+                    "name": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "customfield_10021": {
+                "items": {
+                  "properties": {
+                    "name": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "startDate": {
+                      "format": "date-time",
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "endDate": {
+                      "format": "date-time",
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "completeDate": {
+                      "format": "date-time",
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "customfield_10023": {
+                "type": [
+                  "null",
+                  "number"
+                ]
               }
             },
             "type": [
