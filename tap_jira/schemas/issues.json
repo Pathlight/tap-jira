@@ -167,6 +167,11 @@
            		}
            }
         },
+        "customfield_10015": {
+           "$comment": "Start date (of the interview) in the Pathlight PRW project",
+       		"type": [ "null", "string" ], 
+       		"format": "date-time"
+        }, 
         "customfield_10021": {
            "$comment": "Sprints are defined as custom fields in Jira, so the custom field id could be different for different instances",
            "type": [ "null",  "array" ],
@@ -177,8 +182,32 @@
         "customfield_10023": {
            "$comment": "Story Points are defined as custom fields in Jira, so the custom field id could be different for different instances",
            "type": [ "null",  "number" ]
-        }    
-       },
+        },    
+        "customfield_10051": {
+           "$comment": "Attendees in the Pathlight PRW project",
+           "type": [ "null",  "array" ],
+           "items": {
+           		"type": [ "null", "object"],
+           		"properties": {
+		            "displayName": {"type": [ "null", "string"] },
+		            "accountId": {"type": [ "null", "string"] } 
+            		}
+           }      
+        },
+        "customfield_10052": {
+           "$comment": "Name (of the person being interviewed) in the Pathlight PRW project",
+           "type": [
+            "null",  "string"
+          ]
+        },
+        "customfield_10054": {
+           "$comment": "Function (of the person being interviewed) in the Pathlight PRW project",
+           "type": [ "null", "object" ],
+           "properties": {
+             "value": {"type": [ "null", "string"] }
+          }
+        }
+      },
       "patternProperties": {
         ".+": {}
       }
