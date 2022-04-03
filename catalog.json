@@ -3388,6 +3388,13 @@
                   "array"
                 ]
               },
+              "customfield_10015": {
+                "format": "date-time",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
               "customfield_10021": {
                 "items": {
                   "properties": {
@@ -3433,6 +3440,52 @@
                 "type": [
                   "null",
                   "number"
+                ]
+              },
+              "customfield_10051": {
+                "items": {
+                  "properties": {
+                    "displayName": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "accountId": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "customfield_10052": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "customfield_10054": {
+                "properties": {
+                  "value": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
                 ]
               }
             },
