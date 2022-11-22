@@ -133,6 +133,13 @@
             "accountId": {"type": [ "null", "string"] } 
           }
         },
+        "reporter": {
+          "type": [ "null", "object" ],
+          "properties": {
+            "displayName": {"type": [ "null", "string"] },
+            "accountId": {"type": [ "null", "string"] } 
+          }
+        },
         "status": {
           "type": [ "null", "object" ],
           "properties": {
@@ -181,11 +188,11 @@
         },    
         "customfield_10023": {
            "$comment": "Story Points are defined as custom fields in Jira, so the custom field id could be different for different instances",
-           "type": [ "null",  "number" ]
+           "type": [ "null", "number" ]
         },    
         "customfield_10051": {
            "$comment": "Attendees in the Pathlight PRW project",
-           "type": [ "null",  "array" ],
+           "type": [ "null", "array" ],
            "items": {
            		"type": [ "null", "object"],
            		"properties": {
@@ -206,7 +213,15 @@
            "properties": {
              "value": {"type": [ "null", "string"] }
           }
-        }
+        },
+        "customfield_10064": {
+          "$comment": "Project owner in the Pathlight FUJ project",
+          "type": [ "null", "object" ],
+          "properties": {
+            "displayName": {"type": [ "null", "string"] },
+            "accountId": {"type": [ "null", "string"] } 
+         }
+       }
       },
       "patternProperties": {
         ".+": {}
