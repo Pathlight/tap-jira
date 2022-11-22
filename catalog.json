@@ -3319,6 +3319,26 @@
                   "object"
                 ]
               },
+              "reporter": {
+                "properties": {
+                  "displayName": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "accountId": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
               "status": {
                 "properties": {
                   "name": {
@@ -3477,6 +3497,26 @@
               "customfield_10054": {
                 "properties": {
                   "value": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ]
+              },
+              "customfield_10064": {
+                "properties": {
+                  "displayName": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "accountId": {
                     "type": [
                       "null",
                       "string"
