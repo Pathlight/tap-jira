@@ -3527,6 +3527,13 @@
                   "null",
                   "object"
                 ]
+              },
+              "customfield_10065": {
+                "format": "date-time",
+                "type": [
+                  "null",
+                  "string"
+                ]
               }
             },
             "type": [
