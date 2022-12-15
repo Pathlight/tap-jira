@@ -38,6 +38,7 @@ def get_abs_path(path):
 
 def load_schema(tap_stream_id):
     path = "schemas/{}.json".format(tap_stream_id)
+    LOGGER.info('Loading schema: `%s`', get_abs_path(path))
     schema = utils.load_json(get_abs_path(path))
     refs = schema.pop("definitions", {})
     if refs:
