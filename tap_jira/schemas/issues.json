@@ -221,7 +221,13 @@
             "displayName": {"type": [ "null", "string"] },
             "accountId": {"type": [ "null", "string"] } 
          }
+       },
+       "customfield_10065": {
+        "$comment": "Launch date in the Pathlight FUJ project",
+        "type": [ "null", "string" ], 
+        "format": "date-time"
        }
+     }
       },
       "patternProperties": {
         ".+": {}
