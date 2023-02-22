@@ -3462,6 +3462,32 @@
                   "number"
                 ]
               },
+              "customfield_10050": {
+                "items": {
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "id": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
               "customfield_10051": {
                 "items": {
                   "properties": {
