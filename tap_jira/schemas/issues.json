@@ -174,7 +174,7 @@
            		}
            }
         },
-       "customfield_10015": {
+        "customfield_10015": {
            "$comment": "Start date (of the interview) in the Pathlight PRW project",
        		"type": [ "null", "string" ], 
        		"format": "date-time"
