@@ -166,8 +166,14 @@ class Client():
             self.test_credentials_are_authorized()
         else:
             LOGGER.info("Using Basic Auth API authentication")
+            credentials = None
+            if config.get("api_token"):
+                credentials = config.get("api_token")
+            else:
+                LOGGER.info("Warning: using deprecated password authentication")
+                credentials = config.get("password")
+            self.auth = HTTPBasicAuth(config.get("username"), credentials)
             self.base_url = config.get("base_url")
-            self.auth = HTTPBasicAuth(config.get("username"), config.get("password"))
             self.test_basic_credentials_are_authorized()
 
     def url(self, path):
